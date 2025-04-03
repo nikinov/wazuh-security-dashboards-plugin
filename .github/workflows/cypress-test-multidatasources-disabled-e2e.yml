@@ -22,6 +22,8 @@ jobs:
     steps:
       - name: Checkout Branch
         uses: actions/checkout@v4
+        with:
+          repository: nikinov/wazuh-security-dashboards-plugin
 
       # Configure the Dashboard for multi datasources disabled (default)
       - name: Create OpenSearch Dashboards Config

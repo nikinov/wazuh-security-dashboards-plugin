@@ -27,6 +27,8 @@ jobs:
     steps:
       - name: Checkout Branch
         uses: actions/checkout@v4
+        with:
+          repository: nikinov/wazuh-security-dashboards-plugin
 
       # Download and Check Keycloak Version
       - name: Download and Check Keyloak Version on Linux

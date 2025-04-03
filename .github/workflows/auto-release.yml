@@ -26,6 +26,8 @@ jobs:
         id: tag
         uses: dawidd6/action-get-tag@v1
       - uses: actions/checkout@v4
+        with:
+          repository: nikinov/wazuh-security-dashboards-plugin
       - uses: ncipollo/release-action@v1
         with:
           github_token: ${{ steps.github_app_token.outputs.token }}

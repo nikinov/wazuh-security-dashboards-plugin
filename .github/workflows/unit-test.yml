@@ -18,6 +18,8 @@ jobs:
 
       - name: Checkout Branch
         uses: actions/checkout@v4
+        with:
+          repository: nikinov/wazuh-security-dashboards-plugin
 
       - id: install-dashboards
         uses: derek-ho/setup-opensearch-dashboards@v3

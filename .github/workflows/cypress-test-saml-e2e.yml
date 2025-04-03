@@ -23,6 +23,8 @@ jobs:
     steps:
       - name: Checkout Branch
         uses: actions/checkout@v4
+        with:
+          repository: nikinov/wazuh-security-dashboards-plugin
       
       # Add SAML Configuration
       - name: Create SAML Configuration for Linux
