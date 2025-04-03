@@ -228,7 +228,23 @@ export function LoginPage(props: LoginPageDeps) {
                 className={props.config.ui.basicauth.login.buttonstyle || 'btn-login'}
                 onClick={handleSubmit}
               >
-                Penis!
+                Log
+              </EuiButton>
+            </EuiCompressedFormRow>
+          );
+
+          formBody.push(
+            <EuiCompressedFormRow>
+              <EuiButton
+                data-test-subj="submit-secondary"
+                aria-label="secondary_login"
+                fill
+                size="s"
+                type="submit"
+                className={props.config.ui.basicauth.login.buttonstyle || 'btn-login'}
+                onClick={handleSubmit}
+              >
+                Alternative Login
               </EuiButton>
             </EuiCompressedFormRow>
           );
