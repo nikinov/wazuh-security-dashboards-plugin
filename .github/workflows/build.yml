@@ -5,9 +5,7 @@
 name: Build
 
 on:
-  push:
-    tags:
-      - 'v*'
+  push
 jobs:
   build:
     name: Build app package (auto)
