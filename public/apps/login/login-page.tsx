@@ -228,7 +228,7 @@ export function LoginPage(props: LoginPageDeps) {
                 className={props.config.ui.basicauth.login.buttonstyle || 'btn-login'}
                 onClick={handleSubmit}
               >
-                Log in
+                Penis!
               </EuiButton>
             </EuiCompressedFormRow>
           );
